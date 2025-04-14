@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mbook - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #F0F2F5;
+    }
+    .header {
+      background-color: #1877F2;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .search-box {
+      flex: 1;
+      margin: 0 20px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: none;
+    }
+    .header-icons img {
+      width: 24px;
+      height: 24px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .sidebar, .rightbar {
+      width: 20%;
+      padding: 10px;
+    }
+    .feed {
+      width: 60%;
+      padding: 10px;
+    }
+    .post-box {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .post {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .post-actions {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">M</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search for friends, posts...">
+    </div>
+    <div class="header-icons">
+      <img src="https://img.icons8.com/ios-filled/50/home.png" alt="Home">
+      <img src="https://img.icons8.com/ios-filled/50/user-group-man-man.png" alt="Friends">
+      <img src="https://img.icons8.com/ios-filled/50/chat.png" alt="Messages">
+      <img src="https://img.icons8.com/ios-filled/50/appointment-reminders.png" alt="Notifications">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <p><strong>Mainul</strong></p>
+      <p>Friends</p>
+      <p>Groups</p>
+      <p>Marketplace</p>
+      <p>Memories</p>
+      <p>Saved</p>
+    </div>
+
+    <div class="feed">
+      <div class="post-box">
+        <input type="text" style="width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #ccc;" placeholder="What's on your mind, Mainul?">
+      </div>
+
+      <div class="post">
+        <p><strong>M</strong> - 1 hr ago</p>
+        <p>Had a great day with Mainul!</p>
+        <div class="post-actions">
+          <span>Like</span>
+          <span>Comment</span>
+          <span>Share</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="rightbar">
+      <p><strong>Friend Suggestions</strong></p>
+      <p>Sponsored</p>
+      <p>Birthdays</p>
+      <p>Active Friends</p>
+    </div>
+  </div>
+</body>
+</html>
